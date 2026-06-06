@@ -1,5 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "BOSS Sticker Kutoarjo | Stiker & Aksesoris Kendaraan Premium",
@@ -23,7 +28,6 @@ export const metadata: Metadata = {
     locale: "id_ID",
   },
   robots: { index: true, follow: true },
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
